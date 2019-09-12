@@ -1,0 +1,14 @@
+{
+  "name": "observer",
+  "version": "1.0.0",
+  "description": "Coordination service is an example of observer pattern in action, such as Zookeeper. It has capability of notifying state changes to list of listener.",
+  "main": "Broadcaster.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
