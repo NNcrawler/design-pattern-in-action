@@ -22,3 +22,12 @@ npm start
 >Action : add-listener channel-1 repeater 3 3-times-repeater
 >Action : send-message channel-1 some-message
 ```
+Will return
+```
+Shout from some-shouter
+SOME-MESSAGE
+Message from repeater 3-times-repeater
+some-message
+some-message
+some-message
+```
