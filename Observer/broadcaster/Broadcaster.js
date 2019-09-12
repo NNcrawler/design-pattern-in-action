@@ -12,6 +12,11 @@ module.exports = class Broadcaster {
       return;
     }
 
+    if (typeof listenerObj.action === 'undefined') {
+      console.error("Listener object doesn't implement action()");
+      return;
+    }
+
     if (!this.channels.has(channel)) {
       const listenerList = new Set();
       listenerList.add(listenerObj);
