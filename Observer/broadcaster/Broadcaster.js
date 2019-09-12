@@ -56,5 +56,5 @@ module.exports = class Broadcaster {
 }
 
 function isStringInstance(string) {
-  return string instanceof String;
+  return typeof string == 'string';
 }

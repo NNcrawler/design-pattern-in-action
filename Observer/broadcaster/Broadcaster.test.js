@@ -6,7 +6,7 @@ test('Should add listener', () => {
     action: jest.fn()
   };
 
-  const newChannel = new String('newChannel');
+  const newChannel = 'newChannel';
   broadcaster.addListener(newChannel, mockListner);
   broadcaster.sendMessage(newChannel, 'Hello');
 
@@ -23,7 +23,7 @@ test('Should not create new channel when exist', () => {
     action: jest.fn()
   }
 
-  const newChannel = new String('newChannel');
+  const newChannel = 'newChannel';
   broadcaster.addListener(newChannel, mockListner1);
   broadcaster.addListener(newChannel, mockListner2);
   broadcaster.sendMessage(newChannel, 'Hello');
@@ -40,8 +40,8 @@ test('Should not only invoke listener that belong to same channel', () => {
   const mockListner2 = {
     action: jest.fn()
   }
-  const channel1 = new String('channel1');
-  const channel2 = new String('channel2');
+  const channel1 = 'channel1';
+  const channel2 = 'channel2';
 
   broadcaster.addListener(channel1, mockListner1);
   broadcaster.addListener(channel2, mockListner2);
@@ -56,7 +56,7 @@ test('Should delete listener', () => {
   const mockListner = {
     action: jest.fn()
   }
-  const channel = new String('newChannel');
+  const channel = 'newChannel';
 
   broadcaster.addListener(channel, mockListner);
   broadcaster.unlisten(channel, mockListner);
