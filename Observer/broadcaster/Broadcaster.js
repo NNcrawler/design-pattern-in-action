@@ -29,6 +29,11 @@ module.exports = class Broadcaster {
       return;
     }
 
+    if (!this.channels.has(channel)) {
+      console.error("Channel doesn't exist");
+      return;
+    }
+
     const listenerList = this.channels.get(channel);
     listenerList.forEach(listener => {
       listener.action(message);
