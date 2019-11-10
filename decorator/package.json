@@ -1,0 +1,12 @@
+{
+  "name": "decorator",
+  "version": "1.0.0",
+  "description": "Text enhancer will enhance text base on the decorator.",
+  "main": "ExclamationMarkDecorator.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
